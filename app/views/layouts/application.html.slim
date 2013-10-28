@@ -1,0 +1,18 @@
+doctype html
+html lang="en"
+  head
+  body data-offset="50"
+  	.navbar-fixed-top
+  	  .navbar-inner
+  	  	.container
+  	  	  h3
+  	  	  	a.site-logo href="/"
+  	  	  = render_list :class => "nav" do |li|
+  	  	  	= li << link_to("topic", topics_path)
+  	  	  	= li << link_to("hot", hot_path)
+  	  	  	= li << link_to("active_users", active_users_path)
+  	  	  form action="/search" class="navbar-search pull-left" method="get"
+  	  	  = form_tag({controller: "search", action: "index"}, class: "navbar-search pull-left", method: "get")
+  	  	  	= text_field_tag(:q)
+  	  	  = render 'common/user_nav'
+  	.container
