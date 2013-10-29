@@ -1,4 +1,5 @@
 - if current_user
-  li = current_user.name
+  li Hello!! = current_user.name
 - else
-  li = link_to "registe"
+  li = link_to "Registe", 'auth/register'
+  li = link_to "Login In", 'auth/login'
