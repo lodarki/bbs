@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131028153551) do
+ActiveRecord::Schema.define(version: 20131031130423) do
 
   create_table "article_details", force: true do |t|
     t.integer  "for_num_article_id"

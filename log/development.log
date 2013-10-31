@@ -17264,3 +17264,3044 @@ NoMethodError (undefined method `attributes=' for nil:NilClass):
   Rendered /home/programmer/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
   Rendered /home/programmer/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
   Rendered /home/programmer/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 21:01:22 +0800
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `connect'
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.0) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__3926321438149090534__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateForNumNames (20131028142543)
+  [1m[35m (130.0ms)[0m  CREATE TABLE `for_num_names` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131028142543')
+  [1m[36m (39.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateForNumArticles (20131028142739)
+  [1m[35m (95.1ms)[0m  CREATE TABLE `for_num_articles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `for_num_name_id` int(11), `title` varchar(255) DEFAULT 'Blank Theme' NOT NULL, `detail` text, `user_id` int(11), `permission` int(11) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (212.7ms)[0m  [1mCREATE INDEX `index_for_num_articles_on_for_num_name_id` ON `for_num_articles` (`for_num_name_id`) [0m
+  [1m[35m (157.7ms)[0m  CREATE INDEX `index_for_num_articles_on_user_id` ON `for_num_articles` (`user_id`) 
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131028142739')
+  [1m[36m (44.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateArticleDetails (20131028142752)
+  [1m[35m (104.5ms)[0m  CREATE TABLE `article_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `for_num_article_id` int(11), `detail` text, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (199.5ms)[0m  [1mCREATE INDEX `index_article_details_on_for_num_article_id` ON `article_details` (`for_num_article_id`) [0m
+  [1m[35m (199.4ms)[0m  CREATE INDEX `index_article_details_on_user_id` ON `article_details` (`user_id`) 
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131028142752')
+  [1m[36m (54.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddRightToUsers (20131028150748)
+  [1m[35m (225.6ms)[0m  ALTER TABLE `users` ADD `right` int(11) DEFAULT 1 NOT NULL
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131028150748')
+  [1m[36m (42.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddTypeToUsers (20131028153551)
+  [1m[35m (225.6ms)[0m  ALTER TABLE `users` ADD `type` varchar(255) DEFAULT 'User' NOT NULL
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131028153551')
+  [1m[36m (44.9ms)[0m  [1mCOMMIT[0m
+Migrating to InsertRecordsIntoForNumNames (20131031130423)
+  [1m[35m (64.3ms)[0m   	 INSERT INTO for_num_names (name) values ("News"), ("Pictures"), ("Novels"), ("Music"), ("Films")
+
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131031130423')
+  [1m[36m (61.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 21:24:21 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (25.7ms)
+  Rendered common/_user_nav.html.slim (12.2ms)
+Completed 200 OK in 543ms (Views: 496.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:22 +0800
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2013-10-31 21:24:28 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/registrations/new.html.erb within layouts/application (130.5ms)
+  Rendered common/_user_nav.html.slim (1.0ms)
+Completed 200 OK in 153ms (Views: 144.7ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pm4Q9oBUPwQzmnNyZrm0BhCeU5BGM9mTiJ9289IzCaY=", "user"=>{"email"=>"lodarki@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'lodarki@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2013-10-31 13:24:46', 'lodarki@gmail.com', '$2a$10$yZ5mwPfCweFnQYN5ByTEreFA8xVh5Q2yVLn79GB6qgAH48KvjbOv2', '2013-10-31 13:24:46')
+  [1m[36m (38.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2013-10-31 13:24:46', `current_sign_in_at` = '2013-10-31 13:24:46', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-10-31 13:24:46' WHERE `users`.`id` = 1[0m
+  [1m[35m (43.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 258ms (ActiveRecord: 86.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (6.2ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:46 +0800
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2013-10-31 21:24:52 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Pm4Q9oBUPwQzmnNyZrm0BhCeU5BGM9mTiJ9289IzCaY="}
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered common/_user_nav.html.slim (1.2ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:24:53 +0800
+
+
+Started GET "/login" for 127.0.0.1 at 2013-10-31 21:24:54 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/shared/_links.erb (0.8ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/sessions/new.html.erb within layouts/application (40.7ms)
+  Rendered common/_user_nav.html.slim (1.1ms)
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-10-31 21:25:00 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LX3Uik+kneSa9wn6QEguLmHtt9fImYX7lNCfD+NRIw8=", "user"=>{"email"=>"lodarki@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'lodarki@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2013-10-31 13:25:00', `sign_in_count` = 2, `updated_at` = '2013-10-31 13:25:00' WHERE `users`.`id` = 1[0m
+  [1m[35m (49.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 51.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 21:25:00 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:25:01 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:27:25 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[35mForNumName Load (0.6ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (13.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (37.9ms)
+Completed 200 OK in 67ms (Views: 52.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:27:28 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumName Load (0.7ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE (3) LIMIT 1
+  [1m[36mForNumArticle Load (0.8ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 1 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (60.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 89ms (Views: 72.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/articles/new?for_num_name_id=1" for 127.0.0.1 at 2013-10-31 21:27:30 +0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"1"}
+  Rendered articles/new.html.slim within layouts/application (39.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (2.0ms)
+Completed 200 OK in 64ms (Views: 48.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 21:28:09 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"title"=>"The first article", "detail"=>"this is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!", "permission"=>"2"}, "commit"=>"Create Article"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/articles_controller.rb:23:in `create'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/articles/new?for_num_name_id=1" for 127.0.0.1 at 2013-10-31 21:33:30 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"1"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  Rendered articles/new.html.slim within layouts/application (99.4ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (41.4ms)
+Completed 200 OK in 326ms (Views: 244.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:33:31 +0800
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 21:33:35 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"title"=>"The first article", "detail"=>"this is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!", "permission"=>"2"}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO `for_num_articles` (`created_at`, `detail`, `permission`, `title`, `updated_at`, `user_id`) VALUES ('2013-10-31 13:33:35', 'this is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!', 2, 'The first article', '2013-10-31 13:33:35', 1)[0m
+  [1m[35m (129.0ms)[0m  COMMIT
+Redirected to 
+Completed 500 Internal Server Error in 161ms
+
+NoMethodError (undefined method `for_num_article_url' for #<ArticlesController:0x00000003a71810>):
+  app/controllers/articles_controller.rb:24:in `create'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/articles/new?for_num_name_id=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"1"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  Rendered articles/new.html.slim within layouts/application (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (30.3ms)
+Completed 200 OK in 69ms (Views: 38.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:18 +0800
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"title"=>"The first article", "detail"=>"this is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!", "permission"=>"2"}, "commit"=>"Create Article"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `for_num_articles` (`created_at`, `detail`, `permission`, `title`, `updated_at`, `user_id`) VALUES ('2013-10-31 13:37:22', 'this is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!\r\nthis is the content!!', 2, 'The first article', '2013-10-31 13:37:22', 1)
+  [1m[36m (82.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 95ms (ActiveRecord: 83.7ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered articles/show.html.slim within layouts/application (2.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:37:22 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:38:14 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (11.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (5.0ms)
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:38:15 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+  [1m[36mForNumName Load (0.4ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE (3) LIMIT 1[0m
+  [1m[35mForNumArticle Load (0.4ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 1 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (59.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 73ms (Views: 68.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:38:18 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+  [1m[35mForNumName Load (0.2ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE (3) LIMIT 1
+  [1m[36mForNumArticle Load (0.2ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 1 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (1.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:41:16 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.1ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (20.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (72.4ms)
+Completed 200 OK in 107ms (Views: 97.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:41:22 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE (3) LIMIT 1[0m
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.4ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 1 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (10.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.7ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/new?for_num_name_id=1" for 127.0.0.1 at 2013-10-31 21:42:31 +0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"1"}
+  Rendered articles/new.html.slim within layouts/application (9.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (2.0ms)
+Completed 200 OK in 43ms (Views: 19.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:43:32 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (11.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (31.8ms)
+Completed 200 OK in 55ms (Views: 47.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:43:33 +0800
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:43:36 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE (3) LIMIT 1[0m
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 1 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (10.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[35mForNumName Load (0.3ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (10.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (86.1ms)
+Completed 200 OK in 109ms (Views: 97.7ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:19 +0800
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:44:24 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+  [1m[35mForNumName Load (0.1ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE (3) LIMIT 1
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[36mForNumArticle Load (0.3ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 1 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (11.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.7ms)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.3ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (50.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (33.7ms)
+Completed 200 OK in 95ms (Views: 84.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:44:47 +0800
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:44:51 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+  [1m[36mForNumName Load (0.4ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE (3) LIMIT 1[0m
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 1 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (10.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (2.0ms)
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles?for_num_name_id=3" for 127.0.0.1 at 2013-10-31 21:45:42 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"3"}
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[35mForNumName Load (0.2ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 3 LIMIT 1
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[36mForNumArticle Load (0.3ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 3 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (10.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (69.1ms)
+Completed 200 OK in 99ms (Views: 83.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.3ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (12.0ms)
+  [1m[35mUser Load (2.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (76.9ms)
+Completed 200 OK in 100ms (Views: 85.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:45:55 +0800
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:45:56 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.7ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.3ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (10.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (2.2ms)
+Completed 200 OK in 25ms (Views: 19.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/new?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:46:13 +0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  Rendered articles/new.html.slim within layouts/application (2.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 28ms (Views: 10.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"title"=>"adfadf", "detail"=>"adfadfadf", "permission"=>"2"}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `for_num_articles` (`created_at`, `detail`, `permission`, `title`, `updated_at`, `user_id`) VALUES ('2013-10-31 13:46:46', 'adfadfadf', 2, 'adfadf', '2013-10-31 13:46:46', 1)[0m
+  [1m[35m (85.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 95ms (ActiveRecord: 86.9ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendered articles/show.html.slim within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:46:46 +0800
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"title"=>"adfadf", "detail"=>"adfadfadf", "permission"=>"2"}, "commit"=>"Create Article"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `for_num_articles` (`created_at`, `detail`, `permission`, `title`, `updated_at`, `user_id`) VALUES ('2013-10-31 13:48:45', 'adfadfadf', 2, 'adfadf', '2013-10-31 13:48:45', 1)
+  [1m[36m (41.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 161ms (ActiveRecord: 44.4ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered articles/show.html.slim within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (2.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:48:45 +0800
+
+
+Started GET "/articles/new?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:51:55 +0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  Rendered articles/new.html.slim within layouts/application (6.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (31.0ms)
+Completed 200 OK in 105ms (Views: 42.9ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"title"=>"Blank Themeadfadf", "detail"=>"adfadfdsf", "permission"=>"2"}, "commit"=>"Create Article"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `for_num_articles` (`created_at`, `detail`, `permission`, `title`, `updated_at`, `user_id`) VALUES ('2013-10-31 13:52:57', 'adfadfdsf', 2, 'Blank Themeadfadf', '2013-10-31 13:52:57', 1)
+  [1m[36m (48.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 112ms (ActiveRecord: 54.1ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered articles/show.html.slim within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:52:57 +0800
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.1ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.5ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (13.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (67.8ms)
+Completed 200 OK in 100ms (Views: 86.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:55:54 +0800
+
+
+Started GET "/articles/new?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:55:55 +0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  Rendered articles/new.html.slim within layouts/application (10.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (2.0ms)
+Completed 200 OK in 35ms (Views: 18.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"for_num_name_id"=>"4", "title"=>"adfadsf", "detail"=>"adfadsf", "permission"=>"2"}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `for_num_articles` (`created_at`, `detail`, `for_num_name_id`, `permission`, `title`, `updated_at`, `user_id`) VALUES ('2013-10-31 13:56:12', 'adfadsf', 4, 2, 'adfadsf', '2013-10-31 13:56:12', 1)[0m
+  [1m[35m (83.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 93ms (ActiveRecord: 83.9ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/show.html.slim within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:56:12 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:56:28 +0800
+Processing by TopicsController#index as HTML
+  [1m[35mForNumName Load (0.3ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.7ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:56:30 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.2ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.8ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `name' for #<ForNumArticle:0x0000000416a9f0>):
+    1: h1 h1 Welcome to "#{@for_num_name.name}"
+    2: li = link_to "I want to create a new one", new_article_path(for_num_name_id: @for_num_name.id)
+    3: - @for_num_name.for_num_articles.each do |for_num_article|
+    4:   li = link_to "#{for_num_article.name}", show_article_path, article_id: for_num_article.id
+  app/views/articles/index.html.slim:4:in `block in _app_views_articles_index_html_slim___529844321628485541_69885929502560'
+  app/views/articles/index.html.slim:3:in `_app_views_articles_index_html_slim___529844321628485541_69885929502560'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:56:30 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.2ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.1ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `name' for #<ForNumArticle:0x007f1f403cad78>):
+    1: h1 h1 Welcome to "#{@for_num_name.name}"
+    2: li = link_to "I want to create a new one", new_article_path(for_num_name_id: @for_num_name.id)
+    3: - @for_num_name.for_num_articles.each do |for_num_article|
+    4:   li = link_to "#{for_num_article.name}", show_article_path, article_id: for_num_article.id
+  app/views/articles/index.html.slim:4:in `block in _app_views_articles_index_html_slim___529844321628485541_69886101149960'
+  app/views/articles/index.html.slim:3:in `_app_views_articles_index_html_slim___529844321628485541_69886101149960'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+Processing by TopicsController#index as HTML
+  [1m[35mForNumName Load (2.6ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (7.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (7.5ms)
+Completed 200 OK in 36ms (Views: 29.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:57:09 +0800
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:57:10 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.1ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.2ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined local variable or method `show_article_path' for #<#<Class:0x007f1f407693d0>:0x007f1f30519270>):
+    1: h1 h1 Welcome to "#{@for_num_name.name}"
+    2: li = link_to "I want to create a new one", new_article_path(for_num_name_id: @for_num_name.id)
+    3: - @for_num_name.for_num_articles.each do |for_num_article|
+    4:   li = link_to "#{for_num_article.title}", show_article_path, article_id: for_num_article.id
+  app/views/articles/index.html.slim:4:in `block in _app_views_articles_index_html_slim___529844321628485541_69885965679880'
+  app/views/articles/index.html.slim:3:in `_app_views_articles_index_html_slim___529844321628485541_69885965679880'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (58.8ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (75.3ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:57:10 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.1ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.2ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `show_article_path' for #<#<Class:0x007f1f407693d0>:0x00000004406808>):
+    1: h1 h1 Welcome to "#{@for_num_name.name}"
+    2: li = link_to "I want to create a new one", new_article_path(for_num_name_id: @for_num_name.id)
+    3: - @for_num_name.for_num_articles.each do |for_num_article|
+    4:   li = link_to "#{for_num_article.title}", show_article_path, article_id: for_num_article.id
+  app/views/articles/index.html.slim:4:in `block in _app_views_articles_index_html_slim___529844321628485541_31250080'
+  app/views/articles/index.html.slim:3:in `_app_views_articles_index_html_slim___529844321628485541_31250080'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.2ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+Processing by TopicsController#index as HTML
+  [1m[35mForNumName Load (1.8ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (8.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (5.4ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:14 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+Processing by TopicsController#index as HTML
+  [1m[35mForNumName Load (2.0ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (4.0ms)
+  [1m[36mUser Load (6.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (8.9ms)
+Completed 200 OK in 20ms (Views: 10.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:58:16 +0800
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:58:17 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.1ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.2ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"articles"} missing required keys: [:id]):
+    1: h1 h1 Welcome to "#{@for_num_name.name}"
+    2: li = link_to "I want to create a new one", new_article_path(for_num_name_id: @for_num_name.id)
+    3: - @for_num_name.for_num_articles.each do |for_num_article|
+    4:   li = link_to "#{for_num_article.title}", article_path, article_id: for_num_article.id
+  app/views/articles/index.html.slim:4:in `block in _app_views_articles_index_html_slim___529844321628485541_69885929610040'
+  app/views/articles/index.html.slim:3:in `_app_views_articles_index_html_slim___529844321628485541_69885929610040'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (37.0ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.7ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:58:17 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.1ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.2ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"articles"} missing required keys: [:id]):
+    1: h1 h1 Welcome to "#{@for_num_name.name}"
+    2: li = link_to "I want to create a new one", new_article_path(for_num_name_id: @for_num_name.id)
+    3: - @for_num_name.for_num_articles.each do |for_num_article|
+    4:   li = link_to "#{for_num_article.title}", article_path, article_id: for_num_article.id
+  app/views/articles/index.html.slim:4:in `block in _app_views_articles_index_html_slim___529844321628485541_69886101179880'
+  app/views/articles/index.html.slim:3:in `_app_views_articles_index_html_slim___529844321628485541_69886101179880'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+Processing by TopicsController#index as HTML
+  [1m[35mForNumName Load (2.9ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (5.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (7.4ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:04 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+Processing by TopicsController#index as HTML
+  [1m[35mForNumName Load (1.7ms)[0m  SELECT `for_num_names`.* FROM `for_num_names`
+  Rendered topics/index.html.slim within layouts/application (4.9ms)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (5.1ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 21:59:06 +0800
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 21:59:07 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (6.9ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (2.6ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (18.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 40ms (Views: 29.1ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 21:59:11 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/show.html.slim within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 22:12:29 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (2.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (31.3ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:12:30 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 22:12:31 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (9.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:12:32 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.3ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (27.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:12:33 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/show.html.slim within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: h1 "#{@for_num_article.title}"
+    2: p
+    3:   = @for_num_article.detail
+  app/views/articles/show.html.slim:1:in `_app_views_articles_show_html_slim__318601320683761633_69885828888220'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:12:34 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/show.html.slim within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: h1 "#{@for_num_article.title}"
+    2: p
+    3:   = @for_num_article.detail
+  app/views/articles/show.html.slim:1:in `_app_views_articles_show_html_slim__318601320683761633_69885965686300'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:14:56 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[35mForNumName Load (0.1ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[36mForNumArticle Load (0.1ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (30.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (31.7ms)
+Completed 200 OK in 119ms (Views: 104.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:14:57 +0800
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:14:58 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/show.html.slim within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: h1 "#{@for_num_article.title}"
+    2: p
+    3:   = @for_num_article.detail
+  app/views/articles/show.html.slim:1:in `_app_views_articles_show_html_slim__318601320683761633_69885828888220'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:14:58 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/show.html.slim within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: h1 "#{@for_num_article.title}"
+    2: p
+    3:   = @for_num_article.detail
+  app/views/articles/show.html.slim:1:in `_app_views_articles_show_html_slim__318601320683761633_69885965686300'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.1ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (32.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (96.3ms)
+Completed 200 OK in 154ms (Views: 136.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:19:07 +0800
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:19:09 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.9ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  Rendered articles/show.html.slim within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (5.0ms)
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (44.5ms)
+  Rendered common/_user_nav.html.slim (0.4ms)
+Completed 200 OK in 132ms (Views: 50.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:22:05 +0800
+
+
+Started GET "/articles/6/edit" for 127.0.0.1 at 2013-10-31 22:22:11 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/edit.html.slim within layouts/application (4.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (2.3ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/6/edit" for 127.0.0.1 at 2013-10-31 22:22:19 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/edit.html.slim within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.4ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:29:26 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[35mForNumName Load (0.8ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.2ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (5.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (5.0ms)
+Completed 200 OK in 87ms (Views: 20.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+  [1m[35mForNumArticle Load (5.8ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (7.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (4.5ms)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:29:29 +0800
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:29:31 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (16.7ms)
+  Rendered common/_user_nav.html.slim (0.4ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articles/6/edit" for 127.0.0.1 at 2013-10-31 22:29:32 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/_form.html.slim (12.1ms)
+  Rendered articles/edit.html.slim within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: = form_for @for_num_article, :url => article_path(@for_num_article) do |f|
+    2:   =f.hidden_field :for_num_name_id
+    3:   p
+    4:     =f.label :title
+  app/views/articles/_form.html.slim:1:in `_app_views_articles__form_html_slim___2315010347869143897_69885929469940'
+  app/views/articles/edit.html.slim:2:in `_app_views_articles_edit_html_slim___2828049985559365616_69886067703320'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.2ms)
+
+
+Started GET "/articles/6/edit" for 127.0.0.1 at 2013-10-31 22:29:32 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  Rendered articles/_form.html.slim (9.4ms)
+  Rendered articles/edit.html.slim within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: = form_for @for_num_article, :url => article_path(@for_num_article) do |f|
+    2:   =f.hidden_field :for_num_name_id
+    3:   p
+    4:     =f.label :title
+  app/views/articles/_form.html.slim:1:in `_app_views_articles__form_html_slim___2315010347869143897_69885966638740'
+  app/views/articles/edit.html.slim:2:in `_app_views_articles_edit_html_slim___2828049985559365616_69885997080260'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:31:12 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.2ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (33.9ms)
+  Rendered common/_user_nav.html.slim (0.4ms)
+Completed 200 OK in 102ms (Views: 77.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:31:13 +0800
+
+
+Started GET "/articles/6/edit" for 127.0.0.1 at 2013-10-31 22:31:14 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.3ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  Rendered articles/_form.html.slim (3.3ms)
+  Rendered articles/edit.html.slim within layouts/application (4.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.6ms)
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/articles/6" for 127.0.0.1 at 2013-10-31 22:32:33 +0800
+
+AbstractController::ActionNotFound (The action 'update' could not be found for ArticlesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2397157597697530006__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.3ms)
+
+
+Started PATCH "/articles/6" for 127.0.0.1 at 2013-10-31 22:38:07 +0800
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"for_num_name_id"=>"4", "title"=>"This is the first ariticle", "detail"=>"This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!", "permission"=>"2"}, "commit"=>"Update For num article", "id"=>"6"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+Completed 500 Internal Server Error in 47ms
+
+NoMethodError (undefined method `id' for #<ActionController::Parameters:0x007f1f2c0491e0>):
+  app/controllers/articles_controller.rb:30:in `update'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started PATCH "/articles/6" for 127.0.0.1 at 2013-10-31 22:39:58 +0800
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og=", "for_num_article"=>{"for_num_name_id"=>"4", "title"=>"This is the first ariticle", "detail"=>"This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!", "permission"=>"2"}, "commit"=>"Update For num article", "id"=>"6"}
+DEPRECATION WARNING: The following options in your ForNumArticle.has_many :article_details declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumArticle> at /home/loki/workspace/bbs/app/models/for_num_article.rb:2)
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `for_num_articles` SET `title` = 'This is the first ariticle', `detail` = 'This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!This is the content!!\r\nThis is the content!!\r\nThis is the content!!\r\nThis is the content!!', `updated_at` = '2013-10-31 14:39:58' WHERE `for_num_articles`.`id` = 6
+  [1m[36m (82.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 113ms (ActiveRecord: 84.3ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:39:58 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.4ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (72.2ms)
+  Rendered common/_user_nav.html.slim (0.4ms)
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:39:59 +0800
+
+
+Started GET "/articles/6/edit" for 127.0.0.1 at 2013-10-31 22:40:28 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  Rendered articles/_form.html.slim (3.4ms)
+  Rendered articles/edit.html.slim within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"N6vOrpVTxIsrkDS8GIitji8r++kvovF7bTF44sGu7og="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered common/_user_nav.html.slim (9.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:33 +0800
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2013-10-31 22:40:34 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/shared/_links.erb (1.3ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/registrations/new.html.erb within layouts/application (15.1ms)
+  Rendered common/_user_nav.html.slim (34.0ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"64CL9z2F0TVYYR5HutHFXpDtEtBDIk+A80jYwdc/IOg=", "user"=>{"email"=>"peter@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'peter@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2013-10-31 14:40:51', 'peter@gmail.com', '$2a$10$fdH/eXDdPvXaNQCzTvmfceDM0k/xprrCyqO/7JaXoPkApoj33VWzO', '2013-10-31 14:40:51')[0m
+  [1m[35m (98.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2013-10-31 14:40:51', `current_sign_in_at` = '2013-10-31 14:40:51', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-10-31 14:40:51' WHERE `users`.`id` = 2
+  [1m[36m (44.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 233ms (ActiveRecord: 144.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (2.0ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:40:51 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 22:40:55 +0800
+Processing by TopicsController#index as HTML
+DEPRECATION WARNING: The following options in your ForNumName.has_many :for_num_articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:ForNumName> at /home/loki/workspace/bbs/app/models/for_num_name.rb:2)
+  [1m[36mForNumName Load (0.1ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (9.1ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (2.8ms)
+Completed 200 OK in 25ms (Views: 16.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:40:56 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.1ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+  [1m[35mForNumArticle Load (0.4ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (5.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:40:57 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.2ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (1.3ms)
+  Rendered common/_user_nav.html.slim (0.2ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.2ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (8.0ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:41:16 +0800
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (13.7ms)
+  Rendered common/_user_nav.html.slim (4.4ms)
+Completed 200 OK in 33ms (Views: 25.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:08 +0800
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:42:24 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1
+  Rendered articles/show.html.slim within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (Unknown line indicator
+  /home/loki/workspace/bbs/app/views/articles/show.html.slim, Line 3, Column 2
+    @for_num_article.detail
+    ^
+):
+  slim (2.0.1) lib/slim/parser.rb:479:in `syntax_error!'
+  slim (2.0.1) lib/slim/parser.rb:230:in `parse_line_indicators'
+  slim (2.0.1) lib/slim/parser.rb:176:in `parse_line'
+  slim (2.0.1) lib/slim/parser.rb:69:in `call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `block in call'
+  temple (0.6.7) lib/temple/engine.rb:50:in `each'
+  temple (0.6.7) lib/temple/engine.rb:50:in `inject'
+  temple (0.6.7) lib/temple/engine.rb:50:in `call'
+  temple (0.6.7) lib/temple/mixins/template.rb:10:in `compile'
+  temple (0.6.7) lib/temple/templates/rails.rb:34:in `call'
+  actionpack (4.0.0) lib/action_view/template.rb:272:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__1671414562333436513__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2397157597697530006__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/loki/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mForNumArticle Load (0.1ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (1.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.slim within layouts/application (11.8ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:33 +0800
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mForNumArticle Load (0.1ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (1.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.slim within layouts/application (11.1ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:42:43 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 22:43:08 +0800
+Processing by TopicsController#index as HTML
+  [1m[36mForNumName Load (4.7ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (6.8ms)
+  [1m[35mUser Load (5.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (7.1ms)
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:43:09 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.6ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:43:11 +0800
+Processing by ArticlesController#new as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  Rendered articles/_form.html.slim (5.8ms)
+  Rendered articles/new.html.slim within layouts/application (8.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles/" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"64CL9z2F0TVYYR5HutHFXpDtEtBDIk+A80jYwdc/IOg=", "for_num_article"=>{"for_num_name_id"=>"4", "title"=>"peter's article", "detail"=>"Content\r\n\r\nContent\r\n\r\nContent\r\n\r\nContent\r\n\r\nContent\r\n\r\nContentContent\r\n\r\nContent\r\n\r\nContentContent\r\n\r\nContent\r\n\r\nContentContent\r\n\r\nContent\r\n\r\nContent", "permission"=>"0"}, "commit"=>"Create For num article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `for_num_articles` (`created_at`, `detail`, `for_num_name_id`, `title`, `updated_at`, `user_id`) VALUES ('2013-10-31 14:43:39', 'Content\r\n\r\nContent\r\n\r\nContent\r\n\r\nContent\r\n\r\nContent\r\n\r\nContentContent\r\n\r\nContent\r\n\r\nContentContent\r\n\r\nContent\r\n\r\nContentContent\r\n\r\nContent\r\n\r\nContent', 4, 'peter\'s article', '2013-10-31 14:43:39', 2)[0m
+  [1m[35m (182.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/7
+Completed 302 Found in 189ms (ActiveRecord: 182.8ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mForNumArticle Load (0.3ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.slim within layouts/application (1.9ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:43:39 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 22:43:45 +0800
+Processing by TopicsController#index as HTML
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (3.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.7ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:43:46 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+  [1m[35mForNumArticle Load (0.4ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.5ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2013-10-31 22:43:48 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mForNumArticle Load (3.0ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (4.7ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/articles/7/edit" for 127.0.0.1 at 2013-10-31 22:47:55 +0800
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 7 LIMIT 1
+  Rendered articles/_form.html.slim (6.5ms)
+  Rendered articles/edit.html.slim within layouts/application (7.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (2.2ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mForNumArticle Load (0.2ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (6.4ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:47:59 +0800
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:48:00 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.1ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.8ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (6.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.5ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:48:03 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mForNumArticle Load (0.5ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.slim within layouts/application (5.3ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:48:04 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.2ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+  [1m[35mForNumArticle Load (0.2ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.4ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2013-10-31 22:48:05 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mForNumArticle Load (0.3ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (2.5ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:48:06 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.8ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (1.9ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (5.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.6ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"64CL9z2F0TVYYR5HutHFXpDtEtBDIk+A80jYwdc/IOg="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  Rendered common/_user_nav.html.slim (1.0ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:10 +0800
+
+
+Started GET "/login" for 127.0.0.1 at 2013-10-31 22:48:11 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/shared/_links.erb (0.8ms)
+  Rendered /home/loki/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.1.1/app/views/devise/sessions/new.html.erb within layouts/application (47.0ms)
+  Rendered common/_user_nav.html.slim (1.1ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UzFWJghuDWp3T2PmGVmkutGlezZGqE0IIW7wm75F7yM=", "user"=>{"email"=>"lodarki@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'lodarki@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2013-10-31 13:25:00', `current_sign_in_at` = '2013-10-31 14:48:18', `sign_in_count` = 3, `updated_at` = '2013-10-31 14:48:18' WHERE `users`.`id` = 1
+  [1m[36m (111.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 188ms (ActiveRecord: 112.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.9ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-31 22:48:18 +0800
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-10-31 22:48:20 +0800
+Processing by TopicsController#index as HTML
+  [1m[36mForNumName Load (0.3ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names`[0m
+  Rendered topics/index.html.slim within layouts/application (3.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (2.1ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:48:21 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (0.1ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+  [1m[35mForNumArticle Load (0.1ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.5ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2013-10-31 22:48:27 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mForNumArticle Load (0.3ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.slim within layouts/application (1.7ms)
+  Rendered common/_user_nav.html.slim (0.2ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:48:29 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[35mForNumName Load (0.2ms)[0m  SELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1
+  [1m[36mForNumArticle Load (0.2ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC[0m
+  Rendered articles/index.html.slim within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered common/_user_nav.html.slim (1.6ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2013-10-31 22:48:29 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mForNumArticle Load (0.1ms)[0m  [1mSELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.slim within layouts/application (1.9ms)
+  Rendered common/_user_nav.html.slim (0.4ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles?for_num_name_id=4" for 127.0.0.1 at 2013-10-31 22:48:31 +0800
+Processing by ArticlesController#index as HTML
+  Parameters: {"for_num_name_id"=>"4"}
+  [1m[36mForNumName Load (4.6ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` = 4 LIMIT 1[0m
+  [1m[35mForNumArticle Load (0.2ms)[0m  SELECT `for_num_articles`.* FROM `for_num_articles` WHERE `for_num_articles`.`for_num_name_id` = 4 ORDER BY created_at DESC
+  Rendered articles/index.html.slim within layouts/application (2.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered common/_user_nav.html.slim (1.8ms)
+Completed 200 OK in 18ms (Views: 10.9ms | ActiveRecord: 5.3ms)
