@@ -1,0 +1,46 @@
+  [1m[36m (89.5ms)[0m  [1mDROP DATABASE IF EXISTS `bbs_test`[0m
+  [1m[35m (0.3ms)[0m  CREATE DATABASE `bbs_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (97.4ms)[0m  [1mCREATE TABLE `article_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `for_num_article_id` int(11), `detail` text, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (181.8ms)[0m  CREATE INDEX `index_article_details_on_for_num_article_id` USING btree ON `article_details` (`for_num_article_id`) 
+  [1m[36m (180.5ms)[0m  [1mCREATE INDEX `index_article_details_on_user_id` USING btree ON `article_details` (`user_id`) [0m
+  [1m[35m (96.1ms)[0m  CREATE TABLE `for_num_articles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `for_num_name_id` int(11), `title` varchar(255) DEFAULT 'Blank Theme' NOT NULL, `detail` text, `user_id` int(11), `permission` int(11) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (174.7ms)[0m  [1mCREATE INDEX `index_for_num_articles_on_for_num_name_id` USING btree ON `for_num_articles` (`for_num_name_id`) [0m
+  [1m[35m (189.8ms)[0m  CREATE INDEX `index_for_num_articles_on_user_id` USING btree ON `for_num_articles` (`user_id`) 
+  [1m[36m (90.4ms)[0m  [1mCREATE TABLE `for_num_names` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (98.7ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime, `right` int(11) DEFAULT 1 NOT NULL, `type` varchar(255) DEFAULT 'User' NOT NULL) ENGINE=InnoDB
+  [1m[36m (180.9ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) [0m
+  [1m[35m (177.8ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) 
+  [1m[36m (94.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (236.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (40.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131031130423')
+  [1m[36m (41.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131028153551')[0m
+  [1m[35m (41.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131023135412')
+  [1m[36m (41.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131028142752')[0m
+  [1m[35m (41.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131028142739')
+  [1m[36m (74.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131028150748')[0m
+  [1m[35m (58.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131028142543')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SearchController#index as HTML
+  Rendered search/index.html.slim within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by TopicsController#index as HTML
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#index as HTML
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HotsController#index as HTML
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by ArticlesController#index as HTML
+  [1m[36mForNumName Load (0.4ms)[0m  [1mSELECT `for_num_names`.* FROM `for_num_names` WHERE `for_num_names`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK

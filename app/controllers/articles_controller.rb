@@ -26,7 +26,6 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    ap params
     @for_num_article = ForNumArticle.find_by(id: params[:id])
     @for_num_article.update(params[:for_num_article].permit(:for_num_name_id,:title, :detail, :permission))
     redirect_to article_url(@for_num_article.id)
