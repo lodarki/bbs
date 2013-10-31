@@ -1,0 +1,13 @@
+h2 Let create a new one!!
+= form_for @for_num_article, :url => article_path(@for_num_article) do |f|
+  p
+    =f.label :title
+    =f.text_field :title
+  p
+    =f.label :Content
+    =f.text_area :detail
+  p
+    =f.label :permission
+    =f.text_field :permission
+  p
+    =f.submit "Create Article"

@@ -1,2 +1,4 @@
-h1 h1 Welcome to Articles
-p Find me in app/views/articles/index.html.slim
+h1 h1 Welcome to "#{@for_num_name.name}"
+li = link_to "I want to create a new one", new_article_path(for_num_name_id: @for_num_name.id)
+- @for_num_name.for_num_articles.each do |for_num_article|
+  li = link_to "#{for_num_article.name}", show_article_path, article_id: for_num_article.id

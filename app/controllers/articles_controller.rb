@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
+
+  before_action :assign_article
+
   def index
-    ForNumArticle.where(for_num_name_id: params[:id].to_i)
+    @for_num_name = ForNumName.find_by(params[:for_num_name_id])
   end
 
   def show
@@ -8,7 +11,8 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    ap params
+    @for_num_article = ForNumArticle.new(for_num_name_id: params[:for_num_name_id])
+    @for_num_article
   end
 
   def edit
@@ -16,7 +20,10 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    ap params
+    ap params[:for_num_article]
+    @for_num_article.attributes = params[:for_num_article]
+    @for_num_article.save
+    redirect_to @for_num_article
   end
 
   def destroy

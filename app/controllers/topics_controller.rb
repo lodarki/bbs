@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
   def index
-    @forNumNames = ForNumName.all
+    @for_num_names = ForNumName.all
   end
 end
