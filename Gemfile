@@ -1,5 +1,5 @@
-# source 'https://rubygems.org'
-source 'http://ruby.taobao.org'
+source 'https://rubygems.org'
+# source 'http://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -56,3 +56,5 @@ gem 'devise'
 gem 'slim'
 gem 'slim-rails'
 gem 'ransack'
+gem 'social-share-button'
+gem 'awesome_print'

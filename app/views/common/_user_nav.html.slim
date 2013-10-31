@@ -1,5 +1,6 @@
 - if current_user
-  li Hello!! = current_user.name
+  li = link_to "Hello!!#{current_user.email}", edit_user_registration_path
+  li = link_to "Logout", '/logout', data: { confirm: "Are you sure to logout?" }, method: :delete
 - else
-  li = link_to "Registe", 'auth/register'
-  li = link_to "Login In", 'auth/login'
+  li = link_to "Registe", new_user_registration_path
+  li = link_to "Login In", new_user_session_path
