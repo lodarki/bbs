@@ -4,21 +4,7 @@ html lang="en"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tag
   body data-offset="50" data-controller-name="#{controller_name}"
-    table
-      tr
-        td
-          = link_to("Home", home_index_path)
-        td
-          = link_to("For Num Name", topics_path)
-        td
-          = link_to("hot", hots_path)
-        td
-          = link_to("active_users", users_path)
-  	  	td
-          form action="/search" method="get"
-            input.span3 name="q" placeholder="search for user" type="text" value=(params[:q])
-  	    td
-          = render 'common/user_nav'
+  	p
+      = render 'common/user_nav'
   	.container
-      = notice_message
       = yield

@@ -1,6 +1,7 @@
-h1 #{@for_num_article.title}
-p
-  = @for_num_article.detail
-- if current_user.id == @for_num_article.user_id
-  li = link_to "edit", edit_article_path(id: @for_num_article.id)
-li = link_to 'Back', articles_path(for_num_name_id: @for_num_article.for_num_name_id)
+h1 #{@article.title}
+textarea readonly="read-only" style="width: 500px; height: 500px;"
+  = @article.detail
+- if current_user
+  - if current_user.id == @article.user_id
+    li = link_to "edit", edit_topic_article_path(id: @article.id)
+li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)

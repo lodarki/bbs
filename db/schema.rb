@@ -11,33 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131031130423) do
+ActiveRecord::Schema.define(version: 20131101015110) do
 
-  create_table "article_details", force: true do |t|
-    t.integer  "for_num_article_id"
+  create_table "article_comments", force: true do |t|
+    t.integer  "article_id"
     t.text     "detail"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "article_details", ["for_num_article_id"], name: "index_article_details_on_for_num_article_id", using: :btree
-  add_index "article_details", ["user_id"], name: "index_article_details_on_user_id", using: :btree
+  add_index "article_comments", ["article_id"], name: "index_article_comments_on_article_id", using: :btree
+  add_index "article_comments", ["user_id"], name: "index_article_comments_on_user_id", using: :btree
 
-  create_table "for_num_articles", force: true do |t|
-    t.integer  "for_num_name_id"
-    t.string   "title",           default: "Blank Theme", null: false
+  create_table "articles", force: true do |t|
+    t.integer  "topic_id"
+    t.string   "title",      default: "Blank Theme", null: false
     t.text     "detail"
     t.integer  "user_id"
-    t.integer  "permission",      default: 0,             null: false
+    t.integer  "permission", default: 0,             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "for_num_articles", ["for_num_name_id"], name: "index_for_num_articles_on_for_num_name_id", using: :btree
-  add_index "for_num_articles", ["user_id"], name: "index_for_num_articles_on_user_id", using: :btree
+  add_index "articles", ["topic_id"], name: "index_articles_on_topic_id", using: :btree
+  add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree
 
-  create_table "for_num_names", force: true do |t|
+  create_table "topics", force: true do |t|
     t.string "name"
   end
 

@@ -1,11 +1,8 @@
 Bbs::Application.routes.draw do
-  resources :topics
-  resources :users
-  resources :hots
-  resources :search
+  resources :topics do
+    resources :articles
+  end
   resources :home
-  resources :articles
-  resources :hots
 
   devise_for :users, :path => '', :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock'}
 
