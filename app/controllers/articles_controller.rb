@@ -37,6 +37,5 @@ class ArticlesController < ApplicationController
   def like
     @article = Article.find(params[:id])
     @article.update(like: @article.like+1)
-    @article.reload
   end
 end

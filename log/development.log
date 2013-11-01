@@ -37348,3 +37348,216 @@ Processing by ArticlesController#like as JS
   [1m[36mArticle Load (0.5ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
   Rendered articles/like.js.coffee (4.4ms)
 Completed 200 OK in 57ms (Views: 15.7ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/topics/7/articles/2" for 127.0.0.1 at 2013-11-01 17:39:59 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"topic_id"=>"7", "id"=>"2"}
+DEPRECATION WARNING: The following options in your Article.has_many :comments declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:Article> at /home/programmer/workspace/bbs/app/models/article.rb:2)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: The following options in your Topic.has_many :articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:Topic> at /home/programmer/workspace/bbs/app/models/topic.rb:2)
+  [1m[35mTopic Load (0.3ms)[0m  SELECT `topics`.* FROM `topics` WHERE `topics`.`id` = 7 ORDER BY `topics`.`id` ASC LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2 ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered comments/_comment.html.slim (5.9ms)
+  Rendered articles/show.html.slim within layouts/application (103.1ms)
+  Rendered common/_user_nav.html.slim (0.3ms)
+Completed 200 OK in 146ms (Views: 103.6ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 17:40:00 +0800
+
+
+Started PATCH "/topics/7/articles/2/like" for 127.0.0.1 at 2013-11-01 17:40:02 +0800
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"2", "topic_id"=>"7"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `articles` SET `like` = 45, `updated_at` = '2013-11-01 09:40:02' WHERE `articles`.`id` = 2[0m
+  [1m[35m (56.7ms)[0m  COMMIT
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  Rendered articles/like.js.coffee (9.8ms)
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (SyntaxError: unexpected {):
+    1: jQuery("#like").text("#{params[:like]}")
+  app/views/articles/like.js.coffee:1:in `_app_views_articles_like_js_coffee___3923410242748151569_69824124147980'
+
+
+  Rendered /home/programmer/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/programmer/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/programmer/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/topics/7/articles/2" for 127.0.0.1 at 2013-11-01 17:42:01 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"topic_id"=>"7", "id"=>"2"}
+DEPRECATION WARNING: The following options in your Article.has_many :comments declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:Article> at /home/programmer/workspace/bbs/app/models/article.rb:2)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: The following options in your Topic.has_many :articles declaration are deprecated: :order. Please use a scope block instead. For example, the following:
+
+    has_many :spam_comments, conditions: { spam: true }, class_name: 'Comment'
+
+should be rewritten as the following:
+
+    has_many :spam_comments, -> { where spam: true }, class_name: 'Comment'
+. (called from <class:Topic> at /home/programmer/workspace/bbs/app/models/topic.rb:2)
+  [1m[35mTopic Load (0.2ms)[0m  SELECT `topics`.* FROM `topics` WHERE `topics`.`id` = 7 ORDER BY `topics`.`id` ASC LIMIT 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 2 ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered comments/_comment.html.slim (5.9ms)
+  Rendered articles/show.html.slim within layouts/application (97.2ms)
+  Rendered common/_user_nav.html.slim (0.4ms)
+Completed 200 OK in 190ms (Views: 148.1ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/hots.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-01 17:42:02 +0800
+
+
+Started PATCH "/topics/7/articles/2/like" for 127.0.0.1 at 2013-11-01 17:42:07 +0800
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"2", "topic_id"=>"7"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `articles` SET `like` = 46, `updated_at` = '2013-11-01 09:42:07' WHERE `articles`.`id` = 2[0m
+  [1m[35m (31.2ms)[0m  COMMIT
+  Rendered articles/like.js.coffee (4.2ms)
+Completed 200 OK in 56ms (Views: 17.2ms | ActiveRecord: 32.0ms)
+
+
+Started PATCH "/topics/7/articles/2/like" for 127.0.0.1 at 2013-11-01 17:42:11 +0800
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"2", "topic_id"=>"7"}
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `articles` SET `like` = 47, `updated_at` = '2013-11-01 09:42:11' WHERE `articles`.`id` = 2[0m
+  [1m[35m (57.5ms)[0m  COMMIT
+  Rendered articles/like.js.coffee (3.3ms)
+Completed 200 OK in 83ms (Views: 16.3ms | ActiveRecord: 58.9ms)
+
+
+Started PATCH "/topics/7/articles/2/like" for 127.0.0.1 at 2013-11-01 17:42:13 +0800
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"2", "topic_id"=>"7"}
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `articles` SET `like` = 48, `updated_at` = '2013-11-01 09:42:13' WHERE `articles`.`id` = 2[0m
+  [1m[35m (46.8ms)[0m  COMMIT
+  Rendered articles/like.js.coffee (2.0ms)
+Completed 200 OK in 68ms (Views: 14.7ms | ActiveRecord: 48.0ms)
+
+
+Started PATCH "/topics/7/articles/2/like" for 127.0.0.1 at 2013-11-01 17:42:13 +0800
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"2", "topic_id"=>"7"}
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `articles` SET `like` = 49, `updated_at` = '2013-11-01 09:42:13' WHERE `articles`.`id` = 2[0m
+  [1m[35m (29.7ms)[0m  COMMIT
+  Rendered articles/like.js.coffee (2.0ms)
+Completed 200 OK in 49ms (Views: 14.5ms | ActiveRecord: 31.0ms)
+
+
+Started PATCH "/topics/7/articles/2/like" for 127.0.0.1 at 2013-11-01 17:42:13 +0800
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"2", "topic_id"=>"7"}
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `articles` SET `like` = 50, `updated_at` = '2013-11-01 09:42:13' WHERE `articles`.`id` = 2[0m
+  [1m[35m (25.3ms)[0m  COMMIT
+  Rendered articles/like.js.coffee (2.7ms)
+Completed 200 OK in 46ms (Views: 14.9ms | ActiveRecord: 26.4ms)
+
+
+Started PATCH "/topics/7/articles/2/like" for 127.0.0.1 at 2013-11-01 17:42:13 +0800
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"2", "topic_id"=>"7"}
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `articles` SET `like` = 51, `updated_at` = '2013-11-01 09:42:13' WHERE `articles`.`id` = 2[0m
+  [1m[35m (22.1ms)[0m  COMMIT
+  Rendered articles/like.js.coffee (1.6ms)
+Completed 200 OK in 42ms (Views: 14.1ms | ActiveRecord: 23.4ms)

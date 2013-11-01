@@ -1,1 +1,1 @@
-jQuery("#like").text("#{@article.like}")
+jQuery("#like").text("<%= @article.like%>")
