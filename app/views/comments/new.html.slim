@@ -1,0 +1,8 @@
+= form_for @comment, url: topic_article_comment_path(@comment.article.topic, @comment.article, @comment) do |f|
+  p
+    = f.label :comment
+  = f.text_area :detail ,style: "width: 500px; height: 200px;"
+  p
+    = f.submit
+
+li = link_to "Back", topic_article_path(@comment.article.topic, @comment.article)

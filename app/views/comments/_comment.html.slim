@@ -1,0 +1,6 @@
+li Comments By #{comment.user.email} at #{comment.created_at}
+textarea readonly="read-only" style="width: 500px; height: 100px;"
+  =comment.detail
+- if current_user
+  - if comment.user.id == current_user.id
+    = link_to "Delete", topic_article_comment_path(comment.article.topic, comment.article, comment), method: :delete, data: {confirm: 'Are you sure?'}

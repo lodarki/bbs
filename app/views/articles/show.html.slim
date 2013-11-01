@@ -3,6 +3,13 @@ textarea readonly="read-only" style="width: 500px; height: 500px;"
   = @article.detail
 - if current_user
   - if current_user.id == @article.user_id
-    = link_to "Edit", edit_topic_article_path(@article.topic, @article)
-    = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
+    li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
+    li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
+
+p
+  = render @article.comments
+
+p
+  - if current_user
+    = button_to 'Comments This Article', new_topic_article_comment_path(article_id: @article.id), method: :get
 li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)

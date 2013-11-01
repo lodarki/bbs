@@ -11,18 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131101015110) do
-
-  create_table "article_comments", force: true do |t|
-    t.integer  "article_id"
-    t.text     "detail"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "article_comments", ["article_id"], name: "index_article_comments_on_article_id", using: :btree
-  add_index "article_comments", ["user_id"], name: "index_article_comments_on_user_id", using: :btree
+ActiveRecord::Schema.define(version: 20131101054712) do
 
   create_table "articles", force: true do |t|
     t.integer  "topic_id"
@@ -32,10 +21,22 @@ ActiveRecord::Schema.define(version: 20131101015110) do
     t.integer  "permission", default: 0,             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "like",       default: 0,             null: false
   end
 
   add_index "articles", ["topic_id"], name: "index_articles_on_topic_id", using: :btree
   add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree
+
+  create_table "comments", force: true do |t|
+    t.integer  "article_id"
+    t.text     "detail"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["article_id"], name: "index_comments_on_article_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "topics", force: true do |t|
     t.string "name"

@@ -17,7 +17,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    ap params[:article].permit(:title, :detail, :permission)
     @topic = Topic.find(params[:topic_id])
     @article = @topic.articles.create(params[:article].permit(:title, :detail, :permission).merge(:user_id => current_user.id))
     redirect_to topic_article_url(@article.topic, @article)
@@ -26,13 +25,12 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     @article.update(params[:article].permit(:topic_id,:title, :detail, :permission))
-    # redirect_to article_url(@article.id)
     redirect_to topic_article_url(@article.topic, @article)
   end
 
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-    redirect_to topic_articles_url(topic_id: @article.topic_id)
+    redirect_to topic_articles_url(topic_id: params[:topic_id])
   end
 end

@@ -1,4 +1,4 @@
-class ArticleComment < ActiveRecord::Base
+class Comment < ActiveRecord::Base
   belongs_to :article
   belongs_to :user
 end

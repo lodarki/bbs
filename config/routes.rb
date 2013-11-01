@@ -1,6 +1,9 @@
 Bbs::Application.routes.draw do
+
   resources :topics do
-    resources :articles
+    resources :articles do
+      resources :comments
+    end
   end
   resources :home
 
