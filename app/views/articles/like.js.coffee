@@ -1,1 +1,1 @@
-jQuery("#like").val(jQuery("#like").val() + 1)
+jQuery("#like").text("#{@article.like}")

@@ -1,6 +1,8 @@
 h1 #{@article.title}
 br
-  label#like ---#{@article.like} people like this Article
+  h ----
+  label#like #{@article.like}
+  label  people like this Article
 textarea readonly="read-only" style="width: 500px; height: 500px;"
   = @article.detail
 - if current_user
