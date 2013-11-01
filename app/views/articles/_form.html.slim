@@ -1,4 +1,4 @@
-= form_for @article do |f|
+= form_for @article, url: topic_article_path(@article.topic, @article) do |f|
   =f.hidden_field :topic_id
   p
     =f.label :title

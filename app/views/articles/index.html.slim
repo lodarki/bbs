@@ -1,9 +1,9 @@
 h1 h1 Welcome to "#{@topic.name}"
 p
-  = link_to "Edit Current Topic", edit_topic_path(id: @topic.id)
+  = link_to "Edit Current Topic", edit_topic_path(@topic)
   = link_to "Delete Current Topic", topic_path(@topic), method: :delete, data: { confirm: 'Are you sure?'}
 - if current_user
-  li = link_to "I want to create a new one Article", new_topic_article_path(topic_id: @topic.id)
+  li = link_to "I want to create a new one Article", new_topic_article_path(@topic)
 - @topic.articles.each do |article|
   li = link_to "#{article.title}", topic_article_path(id: article.id)
 li = link_to "Back", home_index_path
