@@ -33,4 +33,9 @@ class ArticlesController < ApplicationController
     @article.destroy
     redirect_to topic_articles_url(topic_id: params[:topic_id])
   end
+
+  def like
+    @article = Article.find(params[:id])
+    @article.update(like: @article.like+1)
+  end
 end

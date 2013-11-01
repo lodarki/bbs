@@ -1,3 +1,13 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+jQuery ->
+  WatchLikeBtn()
+
+WatchLikeBtn = ->
+  jQuery(document).on 'click', '#likeBtn', ->
+    $article_id = jQuery('#article_id')
+    $topic_id = jQuery('#article_topic_id')
+    jQuery.ajax
+      url: '/topics/'+$topic_id.val()+'/articles/'+$article_id.val()+'/like'
+      type: 'PATCH'
+      dataType: 'script'
+      data:
+        id: $article_id.val()

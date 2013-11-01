@@ -2,6 +2,9 @@ Bbs::Application.routes.draw do
 
   resources :topics do
     resources :articles do
+      member do
+        patch 'like'
+      end
       resources :comments
     end
   end

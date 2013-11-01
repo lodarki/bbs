@@ -1,4 +1,6 @@
 h1 #{@article.title}
+br
+  label#like ---#{@article.like} people like this Article
 textarea readonly="read-only" style="width: 500px; height: 500px;"
   = @article.detail
 - if current_user
@@ -12,4 +14,8 @@ p
 p
   - if current_user
     = button_to 'Comments This Article', new_topic_article_comment_path(article_id: @article.id), method: :get
+= hidden_field(:article, :id)
+= hidden_field(:article, :topic_id)
+label If you like this Article
+button#likeBtn Press This Button
 li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)

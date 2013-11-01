@@ -1,0 +1,1 @@
+jQuery("#like").val(jQuery("#like").val() + 1)
