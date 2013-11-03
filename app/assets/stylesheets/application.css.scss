@@ -62,7 +62,7 @@
     color: rgb(245, 250, 255);
     border-left: 3px solid rgb(64, 74, 104);
     border-right: 3px solid rgb(64, 74, 104);
-    background: rgb(80, 90, 120);
+    background-color: rgb(80, 90, 120);
   }
 
   li a:hover{
@@ -92,7 +92,7 @@
     text-decoration: none;
     border-left: 3px solid rgb(180, 190, 220);
     border-right: 3px solid rgb(180, 190, 220);
-    background: rgb(80, 90, 120);
+    background: rgb(64, 74, 104);
     width: 100px;
     color: rgb(245, 250, 255);
     font-weight: 700;
@@ -104,7 +104,7 @@
   }
 
   a:visited{
-    color: rgb(170, 90, 225);
+    color: rgb(245, 250, 255);
   }
   
   ol{
@@ -176,19 +176,25 @@
   }
 
   #delete-topic-a:hover{
-    color: rgb(64, 74, 104);
+    font-weight: 600;
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 0, 0);
   }
 
   ul#create-article-ul{
-
     position: absolute;
     top: 520px;
-    li{
-      margin: 0;
-      a{
+    padding: 10px;
+  
+    a{
+      color: rgb(255, 0, 255);
+      font-size: 120%;
+      font-weight: 700;
+      text-decoration: underline;
+    }
 
-      }
+    a:hover{
+      background-color: rgb(180, 150, 255);
     }
   }
 
@@ -214,6 +220,27 @@
       a:hover{
         color: rgb(64, 74, 104);
         background-color: rgb(180, 190, 220);
+      }
+    }
+  }
+
+  .articles-ol{
+    color: rgb(64, 74, 104);
+    
+    li{
+      list-style-type: decimal;
+      font-size: 150%;
+      font-weight: 700;
+
+      a{
+        color: rgb(64, 74, 104);
+        text-decoration: none;
+        height: 30px;
+        line-height: 30px;
+      }
+
+      a:hover{
+        background-color: rgb(120, 130, 160);;
       }
     }
   }

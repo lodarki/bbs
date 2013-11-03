@@ -3,7 +3,7 @@ br
   h ----
   label#like #{@article.like}
   label  people like this Article
-textarea readonly="read-only" style="width: 500px; height: 500px;"
+textarea readonly="read-only"
   = @article.detail
 - if current_user
   - if current_user.id == @article.user_id
