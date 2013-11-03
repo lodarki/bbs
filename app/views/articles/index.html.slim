@@ -1,4 +1,4 @@
-h1 h1 Welcome to "#{@topic.name}"
+h1 Welcome to "#{@topic.name}"
 p
   = link_to "Edit Current Topic", edit_topic_path(@topic)
   = link_to "Delete Current Topic", topic_path(@topic), method: :delete, data: { confirm: 'Are you sure?'}
