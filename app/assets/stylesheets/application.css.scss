@@ -15,10 +15,19 @@
   li{
     list-style-type: none;
   }
+
+  textarea{
+    height: 300px;
+    width: 700px;
+  }
 }
 
 .top-container{
-  margin: 10px 50px 10px 50px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  width: 994px;
   padding: 6px 3px 6px 3px;
   height: 30px;
   border-bottom:1px solid rgb(110, 110, 110);
@@ -62,8 +71,12 @@
 }
 
 .container{
-  margin: 10px 50px 0px 50px;
-  padding: 6px 3px 6px 3px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  width: 1000px;
+  padding: 6px 0px 6px 0px;
   height: 500px;
   background-color: rgb(180, 190, 220);
 }
@@ -95,7 +108,7 @@
   }
   
   ol{
-    margin: 0;
+    margin: 0px 3px 0px 3px;
     padding: 0;
 
     .topic-li{
@@ -104,7 +117,7 @@
   }
 
   ul{
-    margin: 0;
+    margin: 0px 3px 0px 3px;
     padding: 0;
 
     .long-li{
@@ -118,7 +131,92 @@
 }
 
 .topic-articles-container{
+  height: 100%;
+  a:visited{
+    color: rgb(170, 90, 225);
+  }
 
+  li.back-li{
+    margin: 6px 0px 20px 0px;
+    list-style-type: none;
+
+    a{
+      display: block;
+      width: 100px;
+      padding: 10px, 20px;
+      margin: 0px 6px;
+      text-align: center;
+      background-color: rgb(64, 74, 104);
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      height: 30px;
+      line-height: 30px;
+      font-weight: 700;
+      font-size: 120%;
+    }
+
+    a:hover{
+      color: rgb(64, 74, 104);
+      background-color: rgb(180, 190, 220);
+    }
+  }
+
+  h1{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0px 6px 0px 6px;
+    background-color: rgb(64, 74, 104);
+    color: rgb(255, 255, 255);
+  }
+
+  #delete-topic-a{
+
+    background-color: rgb(255, 0, 255);
+  }
+
+  #delete-topic-a:hover{
+    color: rgb(64, 74, 104);
+    background-color: rgb(255, 0, 0);
+  }
+
+  ul#create-article-ul{
+
+    position: absolute;
+    top: 520px;
+    li{
+      margin: 0;
+      a{
+
+      }
+    }
+  }
+
+  ul.topic-options-li{
+    margin: 6px 0px 0px 0px;
+    li{
+      float: right;
+
+      a{
+        display: block;
+        width: 150px;
+        padding: 10px, 20px;
+        margin: 0px 6px;
+        text-align: center;
+        background-color: rgb(64, 74, 104);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        height: 30px;
+        line-height: 30px;
+        font-size: 100%;
+      }
+
+      a:hover{
+        color: rgb(64, 74, 104);
+        background-color: rgb(180, 190, 220);
+      }
+    }
+  }
 }
 
 

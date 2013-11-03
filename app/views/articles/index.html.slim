@@ -1,9 +1,12 @@
-h1 Welcome to "#{@topic.name}"
-p
-  = link_to "Edit Current Topic", edit_topic_path(@topic)
-  = link_to "Delete Current Topic", topic_path(@topic), method: :delete, data: { confirm: 'Are you sure?'}
-- if current_user
-  li = link_to "I want to create a new one Article", new_topic_article_path(@topic)
-- @topic.articles.each do |article|
-  li = link_to "#{article.title}", topic_article_path(id: article.id)
-li = link_to "Back", home_index_path
+.topic-articles-container  
+  h1 Welcome to #{@topic.name}
+  ul.topic-options-li
+    li = link_to "Delete Current Topic", topic_path(@topic), method: :delete, data: { confirm: 'Are you sure?'}, id: "delete-topic-a"
+    li = link_to "Edit Current Topic", edit_topic_path(@topic)
+  li.back-li = link_to "Back", home_index_path
+  ol.articles-ol
+    - @topic.articles.each do |article|
+      li = link_to "#{article.title}", topic_article_path(id: article.id)
+  ul#create-article-ul  
+    - if current_user
+      li = link_to "Create a new Article", new_topic_article_path(@topic), id: "create-article-a"
