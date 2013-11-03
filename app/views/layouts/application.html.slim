@@ -2,9 +2,13 @@ doctype html
 html lang="en"
   head
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tag
-  body data-offset="50" data-controller-name="#{controller_name}"
-  	p
-      = render 'common/user_nav'
+  body.environment data-offset="50" data-controller-name="#{controller_name}"
+    .top-container
+      ul#top-links
+        li = link_to "Home", home_index_path
+      ul#user-links
+        = render 'common/user_nav'
   	.container
       = yield
