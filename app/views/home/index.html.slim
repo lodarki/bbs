@@ -1,5 +1,5 @@
-= button_to "Create a new topic", new_topic_path
-.container
-  ol
-    - @topics.each do |topic|
-      li = link_to "#{topic.name}", topic_articles_path(topic_id: topic.id)
+ol
+  - @topics.each do |topic|
+    li.topic-li = link_to "#{topic.name}", topic_articles_path(topic_id: topic.id)
+ul
+  li.long-li = link_to "Create a new topic", new_topic_path
