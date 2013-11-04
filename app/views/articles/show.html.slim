@@ -1,19 +1,21 @@
 .article-show-container
   h1 #{@article.title}
   li.back-li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)
-  = @article.format_detail.html_safe
-  br
-  label#like #{@article.like}
-  label  people like this Article
-  - if current_user
-    - if current_user.id == @article.user_id
-      li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
-      li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
+  .article-detail
+    = @article.detail.html_safe
+  ul.article-options
+    - if current_user
+      - if current_user.id == @article.user_id
+        li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
+        li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
   = render @article.comments
 
-  - if current_user
-    = button_to 'Comments This Article', new_topic_article_comment_path(article_id: @article.id), method: :get
   = hidden_field(:article, :id)
   = hidden_field(:article, :topic_id)
-  label If you like this Article
-  button#likeBtn Press This Button
+  .article-description
+    label#like #{@article.like}
+    label  people like this Article
+    label If you like this Article:
+    button#likeBtn Press It!
+  - if current_user
+    = button_to 'Comments This Article', new_topic_article_comment_path(article_id: @article.id), method: :get

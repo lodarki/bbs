@@ -25,6 +25,7 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     @article.update(params[:article].permit(:topic_id,:title, :detail, :permission))
+    ap @article
     redirect_to topic_article_url(@article.topic, @article)
   end
 

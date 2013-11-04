@@ -78,8 +78,18 @@
     margin-left: auto;
     width: 1000px;
     padding: 6px 0px 6px 0px;
-    height: 540px;
+    min-height: 540px;
+    height: auto;
     background-color: rgb(180, 190, 220);
+
+    h1{
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      margin: 0px 6px 0px 6px;
+      background-color: rgb(64, 74, 104);
+      color: rgb(255, 255, 255);
+    }
 
     label{
       border-right: 5px solid rgba(180, 180, 180, 0);
@@ -182,15 +192,6 @@
 
     .topic-articles-container{
       height: 100%;
-
-      h1{
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        margin: 0px 6px 0px 6px;
-        background-color: rgb(64, 74, 104);
-        color: rgb(255, 255, 255);
-      }
 
       #delete-topic-a{
         color: rgb(0, 0, 0);
@@ -318,6 +319,58 @@
       input[type="submit"]{
         float: right;
         margin-right: 102px;
+      }
+    }
+
+    .article-show-container{
+
+      #likeBtn{
+        background-color: rgb(64, 74, 104);
+        color: rgb(255, 255, 255);
+        width: 120px;
+        border: 3px solid rgb(64, 74, 104);
+      }
+
+      #likeBtn:hover{
+        cursor: pointer;
+        color: rgb(64, 74, 104);
+        font-weight: 700;
+        background-color: rgb(230, 240, 255);
+      }
+
+      .article-description{
+        text-align: right;
+        margin: 0px 100px;        
+      }
+
+      .article-options{
+
+        li{
+          float: left;
+          width: 100px;
+          text-align: center;
+          background: rgb(64, 74, 104);
+
+          a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            display: block;
+            border-right: 3px solid rgb(180, 190, 220);
+          }
+
+          a:hover{
+            color: rgb(64, 74, 104);
+            font-weight: 700;
+          }
+        }
+      }
+
+      .article-detail{
+        margin: 0px 100px 20px 100px;
+        font-size: 110%;
+        padding: 30px;
+        line-height: 20px;
+        background-color: rgb(150, 160, 190);
       }
     }
   }
