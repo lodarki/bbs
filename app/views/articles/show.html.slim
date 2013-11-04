@@ -1,8 +1,7 @@
 .article-show-container
   h1 #{@article.title}
   li.back-li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)
-  textarea readonly="read-only"
-    = @article.detail
+  = @article.format_detail.html_safe
   br
   label#like #{@article.like}
   label  people like this Article
