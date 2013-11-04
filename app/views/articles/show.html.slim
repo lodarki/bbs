@@ -1,21 +1,20 @@
-h1 #{@article.title}
-br
-  h ----
+.article-show-container
+  h1 #{@article.title}
+  li.back-li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)
+  textarea readonly="read-only"
+    = @article.detail
+  br
   label#like #{@article.like}
   label  people like this Article
-textarea readonly="read-only"
-  = @article.detail
-- if current_user
-  - if current_user.id == @article.user_id
-    li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
-    li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
+  - if current_user
+    - if current_user.id == @article.user_id
+      li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
+      li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
+  = render @article.comments
 
-= render @article.comments
-
-- if current_user
-  = button_to 'Comments This Article', new_topic_article_comment_path(article_id: @article.id), method: :get
-= hidden_field(:article, :id)
-= hidden_field(:article, :topic_id)
-label If you like this Article
-button#likeBtn Press This Button
-li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)
+  - if current_user
+    = button_to 'Comments This Article', new_topic_article_comment_path(article_id: @article.id), method: :get
+  = hidden_field(:article, :id)
+  = hidden_field(:article, :topic_id)
+  label If you like this Article
+  button#likeBtn Press This Button

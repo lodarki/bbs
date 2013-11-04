@@ -1,5 +1,7 @@
 jQuery ->
   WatchLikeBtn()
+  bkLib.onDomLoaded ->
+  nicEditors.allTextAreas()
 
 WatchLikeBtn = ->
   jQuery(document).on 'click', '#likeBtn', ->

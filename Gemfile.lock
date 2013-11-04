@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/anjlab/bootstrap-rails.git
+  revision: 5132d24e0e8614fbdce5c3c268fc6526406b9363
+  specs:
+    anjlab-bootstrap-rails (3.0.1.0)
+      railties (>= 3.0)
+      sass (>= 3.2)
+
+GIT
   remote: git://github.com/huacnlee/bootstrap-helper.git
   revision: 996419b99086b845db947c0b29ac8a782021812e
   specs:
@@ -171,6 +179,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  anjlab-bootstrap-rails!
   awesome_print
   bootstrap_helper!
   coffee-rails (~> 4.0.0)
