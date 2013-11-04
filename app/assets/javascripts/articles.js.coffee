@@ -1,9 +1,8 @@
 jQuery ->
-  WatchLikeBtn()
-  bkLib.onDomLoaded ->
-  nicEditors.allTextAreas()
+  watchLikeBtn()
+  new nicEditor({fullPanel : true}).panelInstance('edittextarea')
 
-WatchLikeBtn = ->
+watchLikeBtn = ->
   jQuery(document).on 'click', '#likeBtn', ->
     $article_id = jQuery('#article_id')
     $topic_id = jQuery('#article_topic_id')

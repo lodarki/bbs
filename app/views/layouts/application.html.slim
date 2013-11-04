@@ -4,7 +4,8 @@ html lang="en"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = stylesheet_link_tag "application", "data-turbolinks-track" => true
     script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"
-    javascript bkLib.onDomLoaded(nicEditors.allTextAreas);
+    javascript:
+      | bkLib.onDomLoaded(nicEditors.allTextAreas);
     = csrf_meta_tag
   body.environment data-offset="50" data-controller-name="#{controller_name}"
     .top-container
