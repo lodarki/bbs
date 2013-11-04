@@ -1,4 +1,4 @@
-.topic-articles-container  
+.topic-articles-container
   h1 Welcome to #{@topic.name}
   ul.topic-options-li
     li = link_to "Delete Current Topic", topic_path(@topic), method: :delete, data: { confirm: 'Are you sure?'}, id: "delete-topic-a"
@@ -7,6 +7,6 @@
   ol.articles-ol
     - @topic.articles.each do |article|
       li = link_to "#{article.title}", topic_article_path(id: article.id)
-  ul#create-article-ul  
+  ul#create-article-ul
     - if current_user
       li = link_to "Create a new Article", new_topic_article_path(@topic), id: "create-article-a"
