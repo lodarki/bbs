@@ -1,2 +1,4 @@
 li.back-li = link_to "Back", topic_articles_path(topic_id: @article.topic_id)
 = render 'form'
+javascript:
+  new nicEditor({fullPanel : true}).panelInstance('edittextarea')

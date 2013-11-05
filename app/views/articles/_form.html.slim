@@ -1,14 +1,14 @@
-.articles-setting-container
+.article-setting-container
   = form_for @article, url: topic_article_path(@article.topic, @article) do |f|
     div
       =f.label :title
       =f.text_field :title
     div
       =f.label :Content
-      div#detail
+      .detail
         =f.text_area :detail, id:"edittextarea"
     div
       =f.label :permission
       =f.text_field :permission
-    br
-    =f.submit
+    div#submit
+      =f.submit

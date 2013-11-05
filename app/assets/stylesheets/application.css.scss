@@ -82,6 +82,13 @@
     height: auto;
     background-color: rgb(180, 190, 220);
 
+    .detail{
+      border: 2px solid rgb(64, 74, 104);
+      width: 702px;
+      margin-left: 130px;
+      margin-bottom: 10px;
+    }
+
     h1{
       height: 50px;
       line-height: 50px;
@@ -289,7 +296,7 @@
       }
     }
 
-    .articles-setting-container{
+    .article-setting-container{
       padding: 0px 30px;
 
       label{
@@ -304,11 +311,9 @@
         vertical-align: top;
       }
 
-      #detail{
-        border: 2px solid rgb(64, 74, 104);
-        width: 702px;
-        margin-left: 130px;
-        margin-bottom: 10px;
+      #submit{
+        margin: 0px 100px;
+        text-align: right;
       }
 
       input{
@@ -317,8 +322,7 @@
       }
 
       input[type="submit"]{
-        float: right;
-        margin-right: 102px;
+        position: relative;
       }
     }
 
@@ -340,7 +344,7 @@
 
       .article-description{
         text-align: right;
-        margin: 0px 100px;        
+        margin: 0px 100px;
       }
 
       .article-options{
@@ -371,6 +375,23 @@
         padding: 30px;
         line-height: 20px;
         background-color: rgb(150, 160, 190);
+      }
+    }
+
+    .comment-setting-container{
+      padding: 0px 30px;
+
+      label{
+        margin-bottom: 0px;
+        display: block;
+        float: left;
+        width: 120px;
+        text-align: right;
+      }
+
+      #submit{
+        margin: 0px 105px;
+        text-align: right;
       }
     }
   }
