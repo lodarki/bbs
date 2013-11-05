@@ -10,8 +10,11 @@
           li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
           li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
   br
-  = render @article.comments
+  = render @comments
   br
+  #pagination
+    .flickr_pagination
+      = will_paginate @comments
   = hidden_field(:article, :id)
   = hidden_field(:article, :topic_id)
   .article-description

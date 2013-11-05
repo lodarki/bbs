@@ -78,7 +78,7 @@
     margin-left: auto;
     width: 1000px;
     padding: 6px 0px 6px 0px;
-    min-height: 540px;
+    min-height: 500px;
     height: auto;
     background-color: rgb(180, 190, 220);
 
@@ -270,8 +270,7 @@
       }
 
       ul#create-article-ul{
-        position: absolute;
-        top: 520px;
+        margin-left: 30px;
         padding: 10px;
 
         a{
@@ -498,9 +497,9 @@
 /*-------------------------------pagination----------------------------*/
 #pagination{
   height: 30px;
-  bottom: 100px;
-  right: 150px;
-  position: absolute;
+  left:645px;
+  position: relative;
+  margin-bottom: 25px;
 
   .active{
     background-color: rgb(255, 255, 255);

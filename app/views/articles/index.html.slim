@@ -4,12 +4,12 @@
     li = link_to "Delete Current Topic", topic_path(@topic), method: :delete, data: { confirm: 'Are you sure?'}, id: "delete-topic-a"
     li = link_to "Edit Current Topic", edit_topic_path(@topic)
   li.back-li = link_to "Back", home_index_path
-  ol.articles-ol
-    - @articles.each do |article|
-      li = link_to "#{article.title}", topic_article_path(id: article.id)
   #pagination
     .flickr_pagination
       = will_paginate @articles
+  ol.articles-ol
+    - @articles.each do |article|
+      li = link_to "#{article.title}", topic_article_path(id: article.id)
 
   ul#create-article-ul
     - if current_user
