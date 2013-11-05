@@ -3,19 +3,21 @@
   li.back-li = link_to 'Back', topic_articles_path(topic_id: @article.topic_id)
   .article-detail
     = @article.detail.html_safe
-  ul.article-options
-    - if current_user
-      - if current_user.id == @article.user_id
-        li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
-        li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
+  .article-options
+    ul
+      - if current_user
+        - if current_user.id == @article.user_id
+          li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
+          li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
+  br
   = render @article.comments
-
+  br
   = hidden_field(:article, :id)
   = hidden_field(:article, :topic_id)
   .article-description
     label#like #{@article.like}
-    label  people like this Article
+    label  people like this Article!
     label If you like this Article:
-    button#likeBtn Press It!
+    button.btn Press It!
   - if current_user
-    = button_to 'Comments This Article', new_topic_article_comment_path(article_id: @article.id), method: :get
+    = button_to 'Comment This Article', new_topic_article_comment_path(article_id: @article.id), method: :get, class: "btn", id: "commentBtn"

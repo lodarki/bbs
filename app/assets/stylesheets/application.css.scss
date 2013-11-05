@@ -328,18 +328,22 @@
 
     .article-show-container{
 
-      #likeBtn{
+      .btn{
         background-color: rgb(64, 74, 104);
         color: rgb(255, 255, 255);
-        width: 120px;
+        min-width: 120px;
         border: 3px solid rgb(64, 74, 104);
       }
 
-      #likeBtn:hover{
+      .btn:hover{
         cursor: pointer;
         color: rgb(64, 74, 104);
         font-weight: 700;
         background-color: rgb(230, 240, 255);
+      }
+
+      #commentBtn{
+        margin: 0px 100px 10px;
       }
 
       .article-description{
@@ -348,9 +352,17 @@
       }
 
       .article-options{
+        height: 20px;
+        line-height: 20px;
+        margin:0px 98px;
+
+        ul{
+          margin: 0;
+          padding: 0;
+        }
 
         li{
-          float: left;
+          float: right;
           width: 100px;
           text-align: center;
           background: rgb(64, 74, 104);
@@ -392,6 +404,25 @@
       #submit{
         margin: 0px 105px;
         text-align: right;
+      }
+    }
+
+    .topic-article-comment-container{
+      min-height: 70px;
+      margin:10px 100px;
+      background-color: rgb(211, 211, 211);
+
+      .comment-head{
+        background-color: rgb(230, 230, 250);
+        text-align:right;
+        font-size:120%;
+        font-weight: 700;
+        color: rgb(100, 100, 100);
+      }
+      .comment-content{
+        margin: 10px;
+        text-align:left;
+        font-size: 105%;
       }
     }
   }
