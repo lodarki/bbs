@@ -3,6 +3,8 @@ jQuery ->
 
 watchLikeBtn = ->
   jQuery(document).on 'click', '#likeBtn', ->
+    $(this).hide()
+    jQuery('#like-label').hide()
     $article_id = jQuery('#article_id')
     $topic_id = jQuery('#article_topic_id')
     jQuery.ajax

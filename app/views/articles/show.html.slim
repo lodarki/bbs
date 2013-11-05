@@ -20,7 +20,9 @@
   .article-description
     label#like #{@article.like}
     label  people like this Article!
-    label If you like this Article:
-    button.btn#likeBtn Press It!
+    - if current_user
+      - if current_user.like_check(@article.id)
+        label#like-label If you like this Article:
+        button.btn#likeBtn Press It!
   - if current_user
     = button_to 'Comment This Article', new_topic_article_comment_path(article_id: @article.id), method: :get, class: "btn", id: "commentBtn"

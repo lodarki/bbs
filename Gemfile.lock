@@ -16,6 +16,14 @@ GIT
       thor (~> 0.14)
       will_paginate (>= 3.0.3)
 
+GIT
+  remote: git://github.com/mbleigh/seed-fu.git
+  revision: 5640fb8aa742899a2757e31f49ebc406d67423a6
+  specs:
+    seed-fu (2.3.0)
+      activerecord (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -189,10 +197,11 @@ DEPENDENCIES
   mysql2
   rails (= 4.0.0)
   ransack
-  rspec (~> 2.14.1)
+  rspec
   rspec-rails
   sass-rails (~> 4.0.0)
   sdoc
+  seed-fu!
   simple_form
   slim
   slim-rails

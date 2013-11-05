@@ -2,6 +2,12 @@ require 'spec_helper'
 
 describe ArticlesController do
 
+  before do
+    user = User.find(1)
+    ap User.all
+    sign_in user
+  end
+
   describe "GET 'index'" do
     it "returns http success" do
       get 'index'

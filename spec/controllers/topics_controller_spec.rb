@@ -2,11 +2,10 @@ require 'spec_helper'
 
 describe TopicsController do
 
-  describe "GET 'index'" do
-    it "returns http success" do
-      get 'index'
-      response.should be_success
-    end
+  before do
+    user = User.find(1)
+    ap User.all
+    sign_in user
   end
 
 end

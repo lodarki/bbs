@@ -38,6 +38,7 @@ class ArticlesController < ApplicationController
 
   def like
     @article = Article.find(params[:id])
+    current_user.like_remember(@article.id)
     @article.update(like: @article.like+1)
   end
 end
