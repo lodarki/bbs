@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
 
   def index
     @topic = Topic.find(params[:topic_id])
+    @articles = Article.where(:topic_id => params[:topic_id]).paginate(:page => params[:page], :per_page => 9).order('"like" DESC')
   end
 
   def show
@@ -25,7 +26,6 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     @article.update(params[:article].permit(:topic_id,:title, :detail, :permission))
-    ap @article
     redirect_to topic_article_url(@article.topic, @article)
   end
 
