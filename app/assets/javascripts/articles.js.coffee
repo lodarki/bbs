@@ -1,6 +1,5 @@
 jQuery ->
   watchLikeBtn()
-  new nicEditor({fullPanel : true}).panelInstance('edittextarea')
 
 watchLikeBtn = ->
   jQuery(document).on 'click', '#likeBtn', ->
