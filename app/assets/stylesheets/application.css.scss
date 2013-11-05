@@ -157,6 +157,54 @@
       }
     }
 
+    .devise-container{
+
+      .user-setting{
+        margin: 30px;
+        height: 300px;
+        padding: 20px;
+
+        .form-inputs{
+
+          label[for]{
+            float: left;
+            display: block;
+            width: 150px;
+            text-align: right;
+            margin-left: 170px;
+            padding: 0;
+          }
+
+          input{
+            margin-bottom: 10px;
+            border: 2px solid rgb(64, 74, 104);
+            padding: 0;
+          }
+        }
+
+        .form-actions{
+          text-align: right;
+          width: 450px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .devise-shared-links{
+          width: 320px;
+          text-align: right;
+
+          a{
+            color: rgb(34, 44, 74);
+          }
+
+          a:hover{
+            color: rgb(255, 0, 0);
+            background-color: rgb(180, 190, 220);
+          }
+        }
+      }
+    }
+
     .home-topics-container{
 
       a{
@@ -272,7 +320,7 @@
           }
 
           a:hover{
-            background-color: rgb(120, 130, 160);;
+            background-color: rgb(120, 130, 160);
           }
         }
       }
@@ -427,6 +475,7 @@
     }
   }
 }
+
 
 
 
