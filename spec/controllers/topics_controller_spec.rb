@@ -40,16 +40,22 @@ describe TopicsController do
   end
 
   it "POST create" do
+    topic = mock_model(Topic)
+    Topic.should_receive(:new).with({'name' => 'name1'}){topic}
+    topic.should_receive(:save){true}
+    post :create, topic: {:name => 'name1'}
+    expect(assigns(:topic)).to eq(topic)
+    response.should redirect_to(topic)
   end
 
-  # it "PUT update" do
-  #   topic = double(Topic)
-  #   Topic.should_receive(:find).with('1'){topic}
-  #   topic.should_receive(:update).with({'name' => 'name1'}){true}
-  #   put :update, :id => '1', :topic => {'name' => 'name1'}
-  #   expect(assigns(:topic)).to eq(topic)
-  #   response.should redirect_to(topic_path(topic))
-  # end
+  it "PUT update" do
+    topic = mock_model(Topic)
+    Topic.should_receive(:find).with('1'){topic}
+    topic.should_receive(:update).with({'name' => 'name1'}){true}
+    put :update, :id => '1', :topic => {'name' => 'name1'}
+    expect(assigns(:topic)).to eq(topic)
+    response.should redirect_to(topic)
+  end
 
   it "DELETE destroy" do
     topic = double(Topic)

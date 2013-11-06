@@ -16,7 +16,6 @@ class TopicsController < ApplicationController
   end
 
   def create
-    ap params
     @topic = Topic.new(params[:topic].permit(:name))
     @topic.save
     redirect_to @topic
