@@ -3397,3 +3397,1212 @@ Processing by TopicsController#create as HTML
 Redirected to http://test.host/topics/1002
 Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
   [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  Rendered articles/edit.html.slim within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x22777a0%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2277674%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2286598%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x228650c%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+  Rendered articles/show.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x1fc523c%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x1fc5174%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2363150%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2363024%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+  Rendered articles/show.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x27ad3dc%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x27ad2b0%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 11ms (ActiveRecord: 4.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2abf070%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2abefe4%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x25c69b0%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x1bc4c78%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 11ms (ActiveRecord: 4.5ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2261dd8%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2261ce8%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  Rendered articles/edit.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x26dc0c0%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x26dc034%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 11ms (ActiveRecord: 4.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x29c1f24%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x29c1df8%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2c150a0%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2c15000%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2b82fc0%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2b82e94%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0xd90210%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x262f9b0%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 11ms (ActiveRecord: 4.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x27478d4%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2747848%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#like as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.8ms)[0m  UPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:39:07' WHERE `users`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 107ms
+  [1m[35m (29.9ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  Rendered articles/edit.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.7ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:39:48' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 69ms (Views: 6.6ms | ActiveRecord: 3.5ms)
+  [1m[36m (33.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x258ed44%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x258ea88%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 12ms (ActiveRecord: 4.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2605278%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x26051ec%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2800910%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2800708%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 8ms (ActiveRecord: 3.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.9ms)[0m  UPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:41:22' WHERE `users`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 114ms (Views: 92.5ms | ActiveRecord: 3.8ms)
+  [1m[35m (33.6ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x27d2b50%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x26dedac%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+  Rendered articles/show.html.slim within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x1d988c4%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x1d987fc%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 10ms (ActiveRecord: 4.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x1f97788%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x1f9765c%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.8ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:42:04' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 63ms (Views: 6.2ms | ActiveRecord: 3.4ms)
+  [1m[36m (42.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x266a024%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2669ee4%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 13ms (ActiveRecord: 4.4ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x281a720%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x281a694%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.7ms)[0m  UPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:42:54' WHERE `users`.`id` = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 63ms (Views: 6.1ms | ActiveRecord: 3.4ms)
+  [1m[35m (37.6ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x238d568%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x238d3b0%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 11ms (ActiveRecord: 4.3ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.9ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:43:48' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 64ms (Views: 6.4ms | ActiveRecord: 3.8ms)
+  [1m[36m (44.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x1e4c680%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x1e4c518%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.2ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:44:41' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered articles/like.js.coffee (0.3ms)
+Completed 200 OK in 73ms (Views: 56.0ms | ActiveRecord: 4.1ms)
+  [1m[36m (36.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x29aa108%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x29a9f78%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2cc953c%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2cc9488%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.1ms)[0m  UPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:53:54' WHERE `users`.`id` = 1
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 70ms (Views: 6.1ms | ActiveRecord: 4.1ms)
+  [1m[35m (29.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2c8d0f0%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2c8cf38%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 15ms (ActiveRecord: 4.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2e86604%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2e86500%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+  Rendered articles/show.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x29b943c%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x29b9360%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2ab9d78%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2ab9c4c%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.7ms)[0m  UPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:55:51' WHERE `users`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 63ms (Views: 6.2ms | ActiveRecord: 3.4ms)
+  [1m[35m (35.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+  Rendered articles/new.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2341758%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x23416b8%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 10ms (ActiveRecord: 4.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x284bc44%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x284bb18%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.1ms)[0m  UPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 07:56:29' WHERE `users`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 62ms (Views: 6.2ms | ActiveRecord: 3.7ms)
+  [1m[35m (27.9ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO `articles` (`created_at`, `detail`, `id`, `permission`, `title`, `topic_id`, `updated_at`, `user_id`) VALUES ('2013-11-06 08:29:20', 'detail1', 1, 1, 'title1', 1, '2013-11-06 08:29:20', 2)
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (42.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO `articles` (`created_at`, `detail`, `id`, `permission`, `title`, `topic_id`, `updated_at`, `user_id`) VALUES ('2013-11-06 08:32:54', 'detail1', 1, 1, 'title1', 1, '2013-11-06 08:32:54', 2)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 08:32:54' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `articles` SET `like` = 1, `updated_at` = '2013-11-06 08:32:54' WHERE `articles`.`id` = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (50.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO `articles` (`created_at`, `detail`, `id`, `permission`, `title`, `topic_id`, `updated_at`, `user_id`) VALUES ('2013-11-06 08:44:30', 'detail1', 1, 1, 'title1', 1, '2013-11-06 08:44:30', 2)
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 08:44:30' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `articles` SET `like` = 1, `updated_at` = '2013-11-06 08:44:30' WHERE `articles`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (32.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  Rendered articles/edit.html.slim within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x200b354%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x200b228%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 14ms (ActiveRecord: 4.5ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x22963d0%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x22962b8%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (150.3ms)[0m  [1mDROP DATABASE IF EXISTS `bbs_test`[0m
+  [1m[35m (0.6ms)[0m  CREATE DATABASE `bbs_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (94.7ms)[0m  [1mCREATE TABLE `articles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `topic_id` int(11), `title` varchar(255) DEFAULT 'Blank Theme' NOT NULL, `detail` text, `user_id` int(11), `permission` int(11) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `like` int(11) DEFAULT 0 NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (116.4ms)[0m  CREATE INDEX `index_articles_on_topic_id` USING btree ON `articles` (`topic_id`) 
+  [1m[36m (165.9ms)[0m  [1mCREATE INDEX `index_articles_on_user_id` USING btree ON `articles` (`user_id`) [0m
+  [1m[35m (63.9ms)[0m  CREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `article_id` int(11), `detail` text, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (124.4ms)[0m  [1mCREATE INDEX `index_comments_on_article_id` USING btree ON `comments` (`article_id`) [0m
+  [1m[35m (132.7ms)[0m  CREATE INDEX `index_comments_on_user_id` USING btree ON `comments` (`user_id`) 
+  [1m[36m (66.4ms)[0m  [1mCREATE TABLE `topics` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (371.7ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime, `right` int(11) DEFAULT 1 NOT NULL, `type` varchar(255) DEFAULT 'User' NOT NULL, `like_list` text) ENGINE=InnoDB
+  [1m[36m (266.8ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) [0m
+  [1m[35m (116.4ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) 
+  [1m[36m (68.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (141.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36m (0.6ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (23.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131105075249')
+  [1m[36m (24.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131028153551')[0m
+  [1m[35m (24.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131028142543')
+  [1m[36m (24.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131101054207')[0m
+  [1m[35m (24.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131101015110')
+  [1m[36m (25.0ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131101005456')[0m
+  [1m[35m (24.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131101003103')
+  [1m[36m (24.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131101054712')[0m
+  [1m[35m (24.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131031130423')
+  [1m[36m (24.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131101004656')[0m
+  [1m[35m (24.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131028142752')
+  [1m[36m (25.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131028150748')[0m
+  [1m[35m (24.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131028142739')
+  [1m[36m (24.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131023135412')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mSQL (45.4ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `id`, `updated_at`) VALUES ('2013-11-06 08:47:12', '11@11.com', '1', 1, '2013-11-06 08:47:12')
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `id`, `updated_at`) VALUES ('2013-11-06 08:47:12', '22@22.com', '2', 2, '2013-11-06 08:47:12')
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `id`, `updated_at`) VALUES ('2013-11-06 08:47:12', '33@33.com', '3', 3, '2013-11-06 08:47:12')
+  [1m[36m (45.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 08:47:12' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `users` SET `like_list` = 'St1EdSt2Ed', `updated_at` = '2013-11-06 08:47:12' WHERE `users`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1EdSt2EdSt33Ed', `updated_at` = '2013-11-06 08:47:12' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (35.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#like as JS
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"topic_id"=>"1", "title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2aff788%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2aff6fc%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"id"=>"1", "topic_id"=>"1"}
+Redirected to http://test.host/topics/1/articles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"id"=>"1", "article"=>{"title"=>"title1", "detail"=>"detail1", "permission"=>"permission1"}, "topic_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://test.host/topics/%23%5BRSpec::Mocks::Mock:0x2beaa6c%20@name=Topic(id:%20integer,%20name:%20string)%5D/articles/%23%5BRSpec::Mocks::Mock:0x2bea940%20@name=Article(id:%20integer,%20topic_id:%20integer,%20title:%20string,%20detail:%20text,%20user_id:%20integer,%20permission:%20integer,%20created_at:%20datetime,%20updated_at:%20datetime,%20like:%20integer)%5D
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1", "topic_id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `articles` (`created_at`, `detail`, `id`, `permission`, `title`, `topic_id`, `updated_at`, `user_id`) VALUES ('2013-11-06 08:47:12', 'detail1', 1, 1, 'title1', 1, '2013-11-06 08:47:12', 2)
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `users` SET `like_list` = 'St1Ed', `updated_at` = '2013-11-06 08:47:12' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `articles` SET `like` = 1, `updated_at` = '2013-11-06 08:47:12' WHERE `articles`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (38.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by TopicsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by TopicsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by TopicsController#new as HTML
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by TopicsController#create as HTML
+  Parameters: {"topic"=>{"name"=>"name1"}}
+Redirected to http://test.host/topics/1001
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by TopicsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Processing by TopicsController#update as HTML
+  Parameters: {"topic"=>{"name"=>"name1"}, "id"=>"1"}
+Redirected to http://test.host/topics/1002
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m

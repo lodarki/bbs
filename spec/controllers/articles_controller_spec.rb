@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 describe ArticlesController do
+  let(:current_user){current_user = User.find(1)}
 
   before do
-    user = User.find(1)
-    sign_in user
+    sign_in current_user
   end
 
   describe "GET 'index'" do
@@ -62,5 +62,31 @@ describe ArticlesController do
     expect(assigns(:topic)).to eq(topic)
     expect(assigns(:article)).to eq(article)
     response.should redirect_to(topic_article_path(topic, article))
+  end
+
+  it "PUT update" do
+    article = double(Article, :topic => double(Topic))
+    Article.should_receive(:find).with('1'){article}
+    article.should_receive(:update).with({'topic_id' => '1', 'title' => 'title1', 'detail' => 'detail1', 'permission' => 'permission1'}){true}
+    put :update, id: '1', topic_id: '1', article: {:topic_id => '1', :title => 'title1', :detail => 'detail1', :permission => 'permission1'}
+    expect(assigns(:article)).to eq(article)
+    response.should redirect_to(topic_article_path(article.topic, article))
+  end
+
+  it "DELETE destroy" do
+    article = double(Article)
+    Article.should_receive(:find).with('1'){article}
+    article.should_receive(:destroy){true}
+    delete :destroy, id: '1', topic_id: '1'
+    expect(assigns(:article)).to eq(article)
+    response.should redirect_to(topic_articles_path(:topic_id => '1'))
+  end
+
+  it "PATCH like" do
+    article = double(Article, id: '1', like: 2)
+    Article.should_receive(:find).with('1'){article}
+    article.should_receive(:like_by).with(current_user)
+    xhr :patch, :like, id: '1', topic_id: '1'
+    response.should be_success
   end
 end
