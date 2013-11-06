@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+  before_filter :authenticate_user!, only: [:new, :edit]
+
   def index
     @topic = Topic.find(params[:topic_id])
     @articles = Article.where(:topic_id => params[:topic_id]).paginate(:page => params[:page], :per_page => 9).order('"like" DESC')
