@@ -10,4 +10,6 @@ describe Article do
     expect{expect{article.like_by(current_user)}.to change{article.like}.by(1)}.to change{current_user.like_list}
     expect(current_user.like_check(article.id)).to be_false
   end
+
+  it {should have_many :comments, :dependent => :destroy}
 end
