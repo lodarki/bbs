@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
   def create
     @topic = Topic.find(params[:topic_id])
     @article = @topic.articles.create(params[:article].permit(:title, :detail, :permission).merge(:user_id => current_user.id))
-    redirect_to topic_article_url(@article.topic, @article)
+    redirect_to topic_article_url(@topic, @article)
   end
 
   def update
