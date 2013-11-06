@@ -25,7 +25,7 @@ GIT
       activesupport (>= 3.1, < 4.1)
 
 GEM
-  remote: http://ruby.taobao.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (4.0.0)
       actionpack (= 4.0.0)

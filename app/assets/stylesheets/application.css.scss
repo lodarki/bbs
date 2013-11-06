@@ -78,7 +78,7 @@
     margin-left: auto;
     width: 1000px;
     padding: 6px 0px 6px 0px;
-    min-height: 500px;
+    min-height: 350px;
     height: auto;
     background-color: rgb(180, 190, 220);
 
@@ -466,22 +466,27 @@
       }
     }
 
-    .topic-article-comment-container{
-      min-height: 70px;
-      margin:10px 100px;
-      background-color: rgb(211, 211, 211);
+    .topic-article-comments-container{
+      margin: 0;
+      padding: 0;
 
-      .comment-head{
-        background-color: rgb(230, 230, 250);
-        text-align:right;
-        font-size:120%;
-        font-weight: 700;
-        color: rgb(100, 100, 100);
-      }
-      .comment-content{
-        margin: 10px;
-        text-align:left;
-        font-size: 105%;
+      .topic-article-comment-container{
+        min-height: 70px;
+        margin:10px 100px;
+        background-color: rgb(211, 211, 211);
+
+        .comment-head{
+          background-color: rgb(230, 230, 250);
+          text-align:right;
+          font-size:120%;
+          font-weight: 700;
+          color: rgb(100, 100, 100);
+        }
+        .comment-content{
+          margin: 10px;
+          text-align:left;
+          font-size: 105%;
+        }
       }
     }
   }

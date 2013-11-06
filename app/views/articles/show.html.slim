@@ -10,7 +10,8 @@
           li = link_to "Delete", topic_article_path(@article.topic, @article), method: :delete, data: {confirm: 'Are you sure?'}
           li = link_to "Edit", edit_topic_article_path(@article.topic, @article)
   br
-  = render @comments
+  .topic-article-comments-container
+    = render @comments
   br
   #pagination
     .flickr_pagination
