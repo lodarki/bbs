@@ -11,5 +11,5 @@ describe Article do
     expect(current_user.like_check(article.id)).to be_false
   end
 
-  it {should have_many :comments, :dependent => :destroy}
+  it {should have_many(:comments).dependent(:destroy)}
 end
