@@ -5,7 +5,6 @@ describe TopicsController do
   before do
     user = User.find(1)
     sign_in user
-    @expect_topic_attr = FactoryGirl.attributes_for(:valid_topic_params)
   end
 
   it "GET index" do
@@ -40,16 +39,8 @@ describe TopicsController do
     expect(assigns(:topic)).to eq(topic)
   end
 
-  # it "POST create" do
-  #   params = FactoryGirl.attributes_for(:topic)
-  #   topic = double(Topic)
-  #   Topic.should_receive(:new).with({"name"=>"name1"}){topic}
-  #   topic.should_receive(:save){true}
-  #   post :create, :topic => params
-  #   expect(controller.instance_eval{ topic_name }).to eq ( @expect_topic_attr.stringify_keys )
-  #   expect(assigns(:topic)).to eq(topic)
-  #   response.should redirect_to(topic_path(topic))
-  # end
+  it "POST create" do
+  end
 
   # it "PUT update" do
   #   topic = double(Topic)
