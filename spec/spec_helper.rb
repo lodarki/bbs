@@ -40,9 +40,8 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 
-  RSpec.configure do |config|
-    config.include Devise::TestHelpers, :type => :controller
-  end
+  config.include Devise::TestHelpers, :type => :controller
+  config.include FactoryGirl::Syntax::Methods
 
   config.before(:suite) do
     SeedFu.seed

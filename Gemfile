@@ -62,3 +62,6 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'seed-fu', github: 'mbleigh/seed-fu'
+gem 'factory_girl'
+gem 'factory_girl_rails'
+gem "rails-i18n"

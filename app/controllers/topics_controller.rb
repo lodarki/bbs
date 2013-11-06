@@ -16,14 +16,14 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @topic = Topic.new(params[:topic].permit(:name))
+    @topic = Topic.new topic_name
     @topic.save
     redirect_to @topic
   end
 
   def update
     @topic = Topic.find(params[:id])
-    @topic.update(params[:topic].permit(:name))
+    @topic.update topic_name
     redirect_to @topic
   end
 
@@ -32,5 +32,9 @@ class TopicsController < ApplicationController
     @topic.destroy
 
     redirect_to home_index_path
+  end
+
+  def topic_name
+    params[:topic].permit(:name)
   end
 end
