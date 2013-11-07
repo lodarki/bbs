@@ -4,9 +4,6 @@ source 'http://ruby.taobao.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -31,7 +28,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'bootstrap_helper', github: 'huacnlee/bootstrap-helper'
+# gem 'bootstrap_helper', github: 'huacnlee/bootstrap-helper'
 gem 'simple_form'
 
 group :doc do
@@ -58,8 +55,8 @@ gem 'slim-rails'
 gem 'ransack'
 gem 'social-share-button'
 gem 'awesome_print'
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-                              :github => 'anjlab/bootstrap-rails'
+# gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+#                               :github => 'anjlab/bootstrap-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'seed-fu', github: 'mbleigh/seed-fu'
 gem 'factory_girl'
