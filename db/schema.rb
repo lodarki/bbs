@@ -13,6 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20131105075249) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+  enable_extension "hstore"
+
   create_table "articles", force: true do |t|
     t.integer  "topic_id"
     t.string   "title",      default: "Blank Theme", null: false

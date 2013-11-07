@@ -63,3 +63,4 @@ gem 'factory_girl'
 gem 'factory_girl_rails'
 gem "rails-i18n"
 gem 'shoulda-matchers'
+gem 'pg'
